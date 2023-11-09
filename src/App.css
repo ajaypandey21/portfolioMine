@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body{
+  font-family:  "ProximaNova", monospace;
+  font-weight: 100;
+}
+
+#navbar>li:hover{
+  
+  text-decoration: underline;
+  text-underline-offset: 0.5em;
+
+}
+#title{
+  font-family:'Sacramento',cursive;
+  
+  
+}
+.designation{
+  font-family: 'Courier New', Courier, monospace;
+ 
+  
+}
+/* @media(min-width:350px)and(max-width:767px){
+  #nav-div{
+    background-color: skyblue !important;
+    background-image: none !important;
+
+    
+   }
+ .plane{
+  visibility:hidden ;
+ }
+ #nav-div>nav{
+  visibility: hidden;
+  
+ }
+
+  
+}*/
+@media(min-width:767px) and (max-width:1349px){
+  #nav-div{
+    background-image: url(../src/util/img/clouds.png);
+  }
+} 
+
+
+/* */
+/*  */
