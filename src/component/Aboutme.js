@@ -3,7 +3,7 @@ import dp from "../util/img/IMG.jpg"
 import linkedin from "../util/img/linkedin-48.png"
 import github from "../util/img/github-48.png"
 import gmail from "../util/img/gmail-48.png"
-import insta from "../util/img/insta-48.png"
+// import insta from "../util/img/insta-48.png"
 
 
 const Aboutme = () => {
@@ -14,19 +14,19 @@ const Aboutme = () => {
 
             <div  className='flex justify-evenly pt-2'>
 
-            <a href="link_to_image_1">
+            {/* <a target='_blank' href="">
                 <img src={insta} alt="Instagram" />
-            </a>
+            </a> */}
 
-            <a href="link_to_image_2">
+            <a target='_blank' rel="noreferrer" href="https://github.com/ajaypandey21">
                 <img src={github} alt="Github" />
             </a>
 
-            <a href="link_to_image_3">
+            <a target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/ajaypandey21/">
                 <img src={linkedin} alt="Linkedin" />
             </a>
 
-            <a href="link_to_image_4">
+            <a target='_blank' rel="noreferrer" href="mailto:pajay7686@gmail.com">
                 <img src={gmail} alt="Gmail" />
             </a>
 
