@@ -25,29 +25,15 @@ body{
  
   
 }
-/* @media(min-width:350px)and(max-width:767px){
-  #nav-div{
-    background-color: skyblue !important;
-    background-image: none !important;
+#head{
+  color: #3a3a3a;
+  font-family: 'ProximaNovaT';
+  font-size: 65px;
 
-    
-   }
- .plane{
-  visibility:hidden ;
- }
- #nav-div>nav{
-  visibility: hidden;
-  
- }
+}
+#paragraph{
+  color: #3a3a3a;
+  font-family: 'ProximaNovaT';
+  font-size: 20px;
 
-  
-}*/
-@media(min-width:767px) and (max-width:1349px){
-  #nav-div{
-    background-image: url(../src/util/img/clouds.png);
-  }
-} 
-
-
-/* */
-/*  */
+}

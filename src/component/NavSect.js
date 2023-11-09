@@ -1,16 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import img from "../util/img/clouds.png";
 import plane from "../util/img/plane.gif";
+import night from "../util/img/night.jpg";
 import { about,vowelcheck } from '../helper';
 import { useMediaQuery } from 'react-responsive';
+import Navbar from './Navbar';
 
 const NavSect = () => {
   
   const isXlScreen = useMediaQuery({ minWidth: '767px', maxWidth: '1369px' });
   const isSmScreen = useMediaQuery({ minWidth: '250px', maxWidth: '767px' });
+  const [item,setitem] = useState("...")
   
 
-  const [item,setitem] = useState("...")
   const divStyle = {
     ...(isXlScreen && {
       backgroundImage: `url(${img})`,
@@ -21,15 +23,17 @@ const NavSect = () => {
       backgroundSize: 'contain',
     }),
     ...(isSmScreen && {
+      backgroundImage: `url(${night})`,
       marginLeft: '0',
       marginRight: '0',
-      
-      
+      backgroundSize:  'cover' ,
     }),
   };
+      
+      
+      
   useEffect(()=>{
     let currentindex=0;
-
     const inter = setInterval(()=>{
           if(currentindex < about.length){
             let currItem= about[currentindex]
@@ -41,45 +45,29 @@ const NavSect = () => {
         }},2000)
     return()=>{
       clearInterval(inter)
-      
-    } 
-  },[]
-  )
+    }},[])
 
+  return ( 
+<div  className='sm:bg-blue-500' style={divStyle}   >
+   <Navbar />
 
+  <section className='sm:p-[2rem] flex flex-col items-center justify-center'>
 
-  return (
-    
-<div id='nav-div' className='sm:bg-blue-500' style={divStyle}   >
+    <img className='sm:hidden' alt='plane' src={plane}></img>
 
-<nav >
- <ul id='navbar' className='p-5 flex items-center justify-center text-lg font-bold  uppercase text-white space-x-14 sm:hidden ' >
-     <li> About</li>
-     <li>Skills</li>
-     <li>Coffee with me</li>
- 
- </ul>
-</nav>
-<section className='  sm:p-[2rem]  flex flex-col items-center justify-center'>
+    <span id='title' className='font-medium text-white sm:text-5xl text-7xl' >Ajay Pandey</span><br/>
 
-    <img className='sm:hidden' alt='p' src={plane}></img>
-
-    <span id='title'  className='font-medium text-white sm:text-5xl  text-7xl' >Ajay Pandey</span><br/>
-
-    <span className='designation  xl:text-white sm:text-xl xl:text-2xl xl:mt-4 font-bold sm:font-light sm:text-white sm:mt-1  '>
+    <span className='designation xl:text-white sm:text-xl xl:text-2xl xl:mt-4 font-bold sm:font-light sm:text-white sm:mt-1  '>
     I am {vowelcheck(item)} <span className='font-mono text-white text-3xl sm:text-xl'>{item}.</span> 
     </span><br />
 
-    <button className=' border bottom-1 rounded-full text-white p-3 mt-2'>COFFEE WITH ME</button>
+    <button className='border bottom-1 rounded-full text-white p-3 mt-2'>COFFEE WITH ME</button>
 
 </section>
-
 </div>
-        
-    
-
   );
 };
+
 
 export default NavSect;
 
