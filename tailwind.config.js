@@ -6,7 +6,7 @@ module.exports = {
     screens: {
     
 
-      'xl': {'min':'767px','max': '1369px'},
+      'xl': {'min':'767px','max': '1500px'},
       // => @media (max-width: 1279px) { ... }
 
      
