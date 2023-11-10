@@ -8,7 +8,7 @@ import Navbar from './Navbar';
 
 const NavSect = () => {
   
-  const isXlScreen = useMediaQuery({ minWidth: '767px', maxWidth: '1500px' });
+  const isXlScreen = useMediaQuery({ minWidth: '767px', maxWidth: '1600px' });
   const isSmScreen = useMediaQuery({ minWidth: '250px', maxWidth: '767px' });
   const [item,setitem] = useState("...")
   
