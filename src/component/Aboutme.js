@@ -33,7 +33,7 @@ const Aboutme = () => {
             </div>
             
         </div>
-        <div className='pl-14 w-[646px] sm:w-auto sm:flex sm:flex-col sm:p-5 sm:justify-center sm:items-center'>
+        <div className='pl-14 w-[646px]  sm:w-auto sm:flex sm:flex-col sm:p-5 sm:justify-center sm:items-center'>
             <h1 id="head" className=' sm:mb-2'>About me.</h1>
             <p id='paragraph' className="mb-4">
                 Hi, I am Ajay Pandey, a 22-year-old Web developer and a Tech enthusiast living in Delhi NCR, India.
