@@ -44,8 +44,10 @@ const Aboutme = () => {
                 Have a look at my skills on GitHub or just connect with me on LinkedIn.
                 I am always excited to do business with like-minded people, let's discuss over coffee.
             </p>
+          
 
         </div>
+       
     </div>
   )
 }

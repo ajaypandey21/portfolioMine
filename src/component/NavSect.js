@@ -48,7 +48,7 @@ const NavSect = () => {
     }},[])
 
   return ( 
-<div  className='sm:bg-blue-500' style={divStyle}   >
+<header  className='sm:bg-blue-500' style={divStyle}   >
    <Navbar />
 
   <section className='sm:p-[2rem] flex flex-col items-center justify-center'>
@@ -64,7 +64,7 @@ const NavSect = () => {
     <button className='border bottom-1 rounded-full text-white p-3 mt-2'>COFFEE WITH ME</button>
 
 </section>
-</div>
+</header>
   );
 };
 

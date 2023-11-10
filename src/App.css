@@ -37,3 +37,12 @@ body{
   font-size: 20px;
 
 }
+#stat h2{
+  font-size: 2.5rem;
+  color: #009ca8;
+}
+#stat span{
+  font-size: 1.2rem;
+  -webkit-text-stroke: 0.2px #627175;
+
+}
