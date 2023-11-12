@@ -6,7 +6,7 @@
 
 body{
   font-family:  "ProximaNova", monospace;
-  font-weight: 100;
+  /* font-weight: 100; */
 }
 
 #navbar>li:hover{
@@ -46,3 +46,58 @@ body{
   -webkit-text-stroke: 0.2px #627175;
 
 }
+/* Add this to your existing CSS */
+@keyframes itemAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to the relevant element */
+.designation .font-mono {
+  animation: itemAnimation 3s ease-in-out infinite;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjusted the number of columns */
+  grid-template-rows: repeat(2, 1fr); /* Adjusted the number of rows */
+  row-gap: 55px; 
+  place-items: center;
+ 
+}
+.grid>img{ 
+  height: 200px;
+
+}
+.head{
+  color: #3a3a3a;
+  font-family: 'ProximaNovaT';
+  font-size: 60px;
+}
+@media (min-width: 250px) and (max-width: 767px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 40px;
+    place-items: center;
+  }
+
+  .grid>img {
+    height: 100px;
+  }
+
+  .head {
+    color: #3a3a3a;
+    font-family: 'ProximaNovaT';
+    font-size: 40px;
+  }
+}
+  
+

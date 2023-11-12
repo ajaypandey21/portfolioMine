@@ -5,7 +5,6 @@ const Stats = () => {
 
     
     <div id="stat" className='flex justify-evenly xl:p-10  sm:flex-col sm:items-center sm:space-y-8  '>
-        
 
     <div id="stats 2"  >
         <h2 className=' flex items-center justify-center'>160000</h2>

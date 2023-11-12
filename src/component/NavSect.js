@@ -42,7 +42,7 @@ const NavSect = () => {
               currentindex=0
             }
             setitem(currItem)
-        }},2000)
+        }},3000)
     return()=>{
       clearInterval(inter)
     }},[])
@@ -56,6 +56,7 @@ const NavSect = () => {
     <img className='sm:hidden' alt='plane' src={plane}></img>
 
     <span id='title' className='font-medium text-white sm:text-5xl text-7xl' >Ajay Pandey</span><br/>
+    
 
     <span className='designation xl:text-white sm:text-xl xl:text-2xl xl:mt-4 font-bold sm:font-light sm:text-white sm:mt-1  '>
     I am {vowelcheck(item)} <span className='font-mono text-white text-3xl sm:text-xl'>{item}.</span> 
