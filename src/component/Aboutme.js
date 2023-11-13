@@ -8,7 +8,7 @@ import gmail from "../util/img/gmail-48.png"
 
 const Aboutme = () => {
   return (
-    <div className='flex items-center justify-center pt-10 sm:flex sm:flex-col'>
+    <div id='about' className='flex items-center justify-center pt-10 sm:flex sm:flex-col'>
         <div className='flex flex-col '>
             <img className='h-[18rem] w-[14rem] rounded-full' alt='profile pic' src={dp}></img>
 
