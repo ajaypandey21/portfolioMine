@@ -13,7 +13,7 @@ const Navbar = () => {
     <ul id='navbar' className=' cursor-pointer p-5 flex items-center justify-center text-lg font-bold  uppercase text-white space-x-14 sm:hidden ' >
     <li onClick={() => scrollToSection('about')}>About</li>
         <li onClick={()=> scrollToSection('skill')}>Skills</li>
-        <li>Coffee with me</li>
+        <li onClick={()=> scrollToSection('coffeee')}>Coffee with me</li>
     
     </ul>
     </nav>
