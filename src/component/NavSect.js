@@ -7,6 +7,12 @@ import { useMediaQuery } from 'react-responsive';
 import Navbar from './Navbar';
 
 const NavSect = () => {
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   
   const isXlScreen = useMediaQuery({ minWidth: '767px', maxWidth: '2000px' });
   const isSmScreen = useMediaQuery({ minWidth: '250px', maxWidth: '767px' });
@@ -62,7 +68,7 @@ const NavSect = () => {
     I am {vowelcheck(item)} <span className='font-mono text-white text-3xl sm:text-xl'>{item}.</span> 
     </span><br />
 
-    <button className='border bottom-1 rounded-full text-white p-3 mt-2'>COFFEE WITH ME</button>
+    <button onClick={()=>scrollToSection("coffeee")}  className='border bottom-1 rounded-full text-white p-3 mt-2'>COFFEE WITH ME</button>
 
 </section>
 </header>
