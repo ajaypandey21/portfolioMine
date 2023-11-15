@@ -124,3 +124,11 @@ body{
   color:whitesmoke;
   font-size: 20px;
 }
+
+.name{
+  font-family: 'Sacramento',cursive ;
+  text-transform: none;
+  font-weight: 400;
+  color: #41b0bf !important;
+  font-size: 3em !important;
+}

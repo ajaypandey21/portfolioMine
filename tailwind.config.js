@@ -13,7 +13,8 @@ module.exports = {
 
       'sm':  {'min':'250px','max': '767px'},
       // => @media (max-width: 390px) { ... }
-    }
+    },
+   
   },
   plugins: [],
 }

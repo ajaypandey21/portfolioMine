@@ -1,6 +1,8 @@
 
 import './App.css';
 import Aboutme from './component/Aboutme';
+import Coffee from './component/Coffee';
+import Footer from './component/Footer';
 import NavSect from './component/NavSect';
 import Quotes from './component/Quotes';
 import Skills from './component/Skills';
@@ -17,6 +19,10 @@ function App() {
     <Skills />
     <Quotes />
     </main>
+    <Coffee />
+
+   
+    <Footer />
     
     </>
       
