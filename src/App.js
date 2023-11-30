@@ -14,7 +14,7 @@ function App() {
     <NavSect />
     <main>
     <Aboutme />
-    <hr className="my-6 border-t-2 border-gray-300 ml-[5rem] mr-[5rem]" />
+    <hr className="my-6  border-t-2 border-gray-300 ml-[5rem] mr-[5rem]" />
     <Stats />
     <Skills />
     <Quotes />
