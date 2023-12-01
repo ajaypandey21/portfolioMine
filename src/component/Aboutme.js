@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import dp from "../util/img/IMG.jpg"
 import linkedin from "../util/img/linkedin-48.png"
 import github from "../util/img/github-48.png"
