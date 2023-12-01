@@ -53,6 +53,7 @@ useEffect(()=>{
   return()=>{
    clearTimeout(timer)
   }
+   // eslint-disable-next-line
 },[activeImageIndex])
 
   
