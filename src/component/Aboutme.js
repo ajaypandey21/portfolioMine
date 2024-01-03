@@ -13,7 +13,7 @@ const Aboutme = () => {
   return (
     <div id='about' className='flex items-center justify-center pt-10 sm:flex sm:flex-col'>
         <div className='flex flex-col '>
-            <img className='h-[18rem] w-[14rem] rounded-full' alt='profile pic' src={dp}></img>
+            <img className='h-[22rem] w-[18rem] object-cover rounded-full' alt='profile pic' src={dp}></img>
 
             <div  className='flex justify-evenly pt-2'>
 
