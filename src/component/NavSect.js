@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import img from "../util/img/clouds.png";
 import plane from "../util/img/plane.gif";
 import night from "../util/img/night.jpg";
-import { about, vowelcheck } from "../helper";
+import { about, options, vowelcheck } from "../helper";
 import { useMediaQuery } from "react-responsive";
 import Navbar from "./Navbar";
-import Typed from "react-typed";
+import Typed from "typed.js";
 
 const NavSect = () => {
   const scrollToSection = (sectionId) => {
@@ -48,8 +48,15 @@ const NavSect = () => {
         setitem(currItem);
       }
     }, 3000);
+    let typedInstance;
+
+    // Create a new Typed instance
+    typedInstance = new Typed("#typing", options);
     return () => {
       clearInterval(inter);
+      if (typedInstance) {
+        typedInstance.destroy();
+      }
     };
   }, []);
 
@@ -69,18 +76,14 @@ const NavSect = () => {
         <br />
 
         <span className=" xl:text-white sm:text-xl xl:text-2xl xl:mt-4 font-bold sm:font-light sm:text-white sm:mt-1  ">
-          {/* I am {vowelcheck(item)} <span className='font-mono text-white text-3xl sm:text-xl'>{item}.</span>  */}
-          I am {vowelcheck(item) + " "}
-          <Typed
-            className="font-mono text-white text-3xl sm:text-xl"
-            strings={about}
-            typeSpeed={50} // Typing speed in milliseconds
-            backSpeed={30} // Backspacing speed in milliseconds
-            loop
-          />{" "}
-          {/* <span >
+          I am {vowelcheck(item)}{" "}
+          {/* <span id="typing" className=" font-mono text-white text-3xl sm:text-xl">
             {item}.
           </span> */}
+          <span
+            id="typing"
+            className=" font-mono text-white text-3xl sm:text-xl"
+          ></span>
         </span>
         <br />
 
