@@ -8,6 +8,7 @@ import pythonIcon from '../util/img/python.svg';
 import djangoIcon from '../util/img/django-icon.svg';
 import nodeIcon from '../util/img/icons8-nodejs-144.png';
 import mongoIcon from '../util/img/mongodb.png';
+import tail from '../util/img/tailwindcss.png';
 
 const skillsData = [
   { id: 1, icon: htmlIcon, name: 'HTML' },
@@ -18,6 +19,7 @@ const skillsData = [
   { id: 6, icon: djangoIcon, name: 'Django' },
   { id: 7, icon: nodeIcon, name: 'Nodejs' },
   { id: 8, icon: mongoIcon, name: 'MongoDB' },
+  { id: 8, icon: tail, name: 'TailwindCSS' },
 ];
 
 const Skills = () => {
